@@ -20,3 +20,12 @@
 		-	add animation and opacity.
 
 ![](https://github.com/caption01/csr_cc4/blob/master/projectrecord/daily/day1/landingPage.JPG)
+
+
+## 19.30 - 21.30 :
+
+	[x] create LoadingPage by using componentDidMount
+		-	using componentDismount to setstage of loading.
+		-	add animation text when loading.
+
+![](https://github.com/caption01/csr_cc4/blob/master/projectrecord/daily/day1/loadingpage.JPG)

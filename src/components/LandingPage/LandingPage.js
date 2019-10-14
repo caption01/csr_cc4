@@ -8,7 +8,7 @@ const LandingPage = () => {
     return( 
         <Jumbotron id={"landingconfig"} >
             <h1>Welcome</h1>
-            <p>CodeCamp4 Final ProJect</p>
+            <p>CodeCamp 4 Final ProJect</p>
             <p>
                 <Button variant="light">Entrance</Button>
             </p>
