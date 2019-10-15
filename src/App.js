@@ -3,6 +3,8 @@ import Particles from 'react-particles-js';
 import LandingPage from './components/LandingPage/LandingPage.js'
 import LoadingPage from './components/LoadingPage/LoadingPage.js';
 import SignIn from './components/SignIn/SignIn.js';
+import Registor from './components/Registor/Registor.js';
+import MainPage from './components/MainPage/MainPage.js';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -48,6 +50,12 @@ class App extends Component{
 
                     case 'signin' :
                     return <SignIn onRouteChange={this.onRouteChange}/>;
+
+                    case 'registor' :
+                    return <Registor onRouteChange={this.onRouteChange} />;
+
+                    case 'main' :
+                    return <MainPage />;
 
                     default :
                     return null;

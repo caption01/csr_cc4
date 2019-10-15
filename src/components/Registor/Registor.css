@@ -1,0 +1,17 @@
+#registorconfig {
+    background: rgba(233, 236, 239, 0.7);
+    width: 75%;
+    margin: auto;
+    position: relative;
+    top: 4rem;
+}
+
+#registorconfig button {
+    margin-top: 3rem;
+}
+
+#registorconfig h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
