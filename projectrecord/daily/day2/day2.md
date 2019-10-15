@@ -16,6 +16,13 @@
 
 ![](https://github.com/caption01/csr_cc4/blob/master/projectrecord/daily/day2/registorform.JPG)
 
-## 15.30 :	
+## 15.30 - 21.00 :	
 
-	[]	create MainPage.
+	[x]	create MainPage.
+	[x]	build CardMember
+		-	use bootstap card based structur
+	[x]	build CardMemberList
+		-	create function by map method to loop fakeData (fakeuser) and create CardMember.
+	[x]	add Header in MainPage.
+
+![](https://github.com/caption01/csr_cc4/blob/master/projectrecord/daily/day2/mainpage.JPG)
