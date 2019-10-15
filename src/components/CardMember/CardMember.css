@@ -1,0 +1,16 @@
+.divcard {
+    text-align: center;
+    display: inline-block;
+}
+
+
+.cardconfig {
+    width: 300px;
+    margin: auto;
+    padding: 0.5rem;
+    margin-left: 1rem;
+}
+.cardimg {
+    margin: auto;
+    max-width: 250px;
+}

@@ -35,7 +35,7 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        <Particles params={particleConfig} style={{"zIndex": "-100", "position":"fixed"}} />
+        <Particles params={particleConfig} style={{"zIndex": "-100", "position":"fixed", 'top': '0'}} />
         {
           this.state.loading === true ? 
               (
