@@ -1,0 +1,20 @@
+
+#signinconfig {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 30%;
+    background: none;
+}
+
+#left {
+    width: 80%;
+    text-align: center;
+    -webkit-box-shadow:0px 0px 20px 20px #7d847f ;
+    -moz-box-shadow:0px 0px 20px 20px #7d847f ;
+    box-shadow:0px 0px 20px 20px #7d847f ;
+    padding: 3rem;
+}
