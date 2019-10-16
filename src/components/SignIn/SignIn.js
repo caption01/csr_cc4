@@ -6,42 +6,18 @@ import Jumbotron from 'react-bootstrap/Jumbotron'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
-const db = [
-    {
-        firstname: 'nutchapon',
-        lastname: 'hanouypornlert',
-        email: 'admin@gmail.com',
-        password: 'adminpass',
-        description: 'blockchain dev. in future'
-    },
-    {
-        firstname: 'jeeja',
-        lastname: 'jubjub',
-        email: 'jeeja@gmail.com',
-        password: 'jeejapass',
-        description: 'cook in resterrant'
-    },
-    {
-        firstname: 'meeya',
-        lastname: 'saraha',
-        email: 'meeya@gmail.com',
-        password: 'meeyapass',
-        description: 'super model girl in thailand'
-    }
-]
-
 class SignIn extends Component{
 
     constructor(){
         super()
         this.state = {
-            username: '',
+            email: '',
             password: ''
         }
     }
 
     onEmailChange = (email) => {
-        this.setState({username: email.target.value})
+        this.setState({email: email.target.value})
     }
 
     onPasswordChange = (password) => {
@@ -49,13 +25,20 @@ class SignIn extends Component{
     }
 
     onLogIn = () => {
-        if (this.state.username === db[0].email && this.state.password === db[0].password ) {
-            this.props.onRouteChange('main')
-            return console.log('Login success')
-        } else {
-            this.props.onRouteChange('home')
-            return console.log('not found id/password')
-        } 
+
+        fetch('http://localhost:3000/signin', {
+            method: 'post',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({
+                email: this.state.email,
+                password: this.state.password
+            })
+        })
+        .then(data => data.json())
+        .then(data => console.log(data))
+
+        this.props.onRouteChange('main')
+    
     }
 
   render(){

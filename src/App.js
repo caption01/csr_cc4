@@ -17,7 +17,7 @@ class App extends Component{
   constructor() {
     super();
     this.state = {
-      loading: true,
+      loading: false,
       route: 'home'
     };
   }
