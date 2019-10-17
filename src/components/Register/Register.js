@@ -4,10 +4,10 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col'
 
-import './Registor.css'
+import './Register.css'
 
 
-class Registor extends Component {
+class Register extends Component {
 
 
     onFirstNameChange = (event) => {
@@ -32,7 +32,13 @@ class Registor extends Component {
     
     onRegistorSubmit = () => {
       
-        fetch('http://localhost:3000/registor', {
+        if (this.state.email.length === 0 || this.state.password.length === 0
+            || this.state.firstname.length === 0 || this.state.lastname.length === 0
+            || this.state.description.length === 0
+            ) {
+            alert('info must fullfill')
+        } else {
+            fetch('http://localhost:3000/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
@@ -43,9 +49,8 @@ class Registor extends Component {
                 description: this.state.description
             })
         })
-        
         this.props.onRouteChange('signin')
-    
+        }
     }
 
 
@@ -63,9 +68,9 @@ class Registor extends Component {
 
     render(){
         return( 
-            <Jumbotron id={"registorconfig"}>
+            <Jumbotron id={"registerconfig"}>
                 <Form>
-                    <h1>Registor</h1>
+                    <h1>Register</h1>
                     <Form.Row>
                         <Form.Group as={Col} controlId="formGridFirstname">
                         <Form.Label>Firstname</Form.Label>
@@ -140,4 +145,4 @@ class Registor extends Component {
     
 }
 
-export default Registor;
+export default Register;

@@ -14,3 +14,7 @@
     margin: auto;
     max-width: 250px;
 }
+
+.btnconfig {
+    justify-content: center
+}

@@ -10,7 +10,7 @@
         -   create fetch function in signin route.
         -   test by using post method and send respone. (PostMan)
 
-![](https://github.com/caption01/csr_cc4/blob/master/projectrecord/daily/day2/postman.JPG)
+![](https://github.com/caption01/csr_cc4/blob/master/projectrecord/daily/day3/postman.JPG)
 
     [x] create database from postgresSQL.
     [x] create table users to save data (first/last, description, email and password).
@@ -28,13 +28,13 @@
         -   get data from fornt-end (jsx file).
         -   insert data to users table.
     
-![](https://github.com/caption01/csr_cc4/blob/master/projectrecord/daily/day2/registersystem.JPG)
+![](https://github.com/caption01/csr_cc4/blob/master/projectrecord/daily/day3/registersystem.JPG)
 
     [x] create signin system.
         - using sql-language (knex API) to match req.body within database.
     [x] test signin system 
         - console.log to watch result
 
-![](https://github.com/caption01/csr_cc4/blob/master/projectrecord/daily/day2/signinsystem.JPG)
+![](https://github.com/caption01/csr_cc4/blob/master/projectrecord/daily/day3/signinsystem.JPG)
 
 

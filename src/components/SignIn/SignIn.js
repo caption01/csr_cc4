@@ -18,6 +18,8 @@ class SignIn extends Component{
 
     onEmailChange = (email) => {
         this.setState({email: email.target.value})
+        
+        this.props.currentUserLoad(email)
     }
 
     onPasswordChange = (password) => {
@@ -35,11 +37,16 @@ class SignIn extends Component{
             })
         })
         .then(data => data.json())
-        .then(data => console.log(data))
-
-        this.props.onRouteChange('main')
-    
-    }
+        .then(data => {
+            if (data.length === 0){
+                this.props.onRouteChange('home')
+            } else {
+                this.props.loadUsers(data)
+                this.props.onRouteChange('main')
+            }
+        })
+    } 
+            
 
   render(){
     return (
@@ -61,7 +68,7 @@ class SignIn extends Component{
             </Form>
             <div>
                 <Form id={"right"}> 
-                    <Button onClick={() => this.props.onRouteChange('registor')} variant="outline-secondary" size='lg' > 
+                    <Button onClick={() => this.props.onRouteChange('register')} variant="outline-secondary" size='lg' > 
                     Registor
                     </Button>
                 </Form>

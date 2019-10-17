@@ -1,4 +1,4 @@
-#registorconfig {
+#registerconfig {
     background: rgba(233, 236, 239, 0.7);
     width: 75%;
     margin: auto;
@@ -6,11 +6,11 @@
     top: 4rem;
 }
 
-#registorconfig button {
+#registerconfig button {
     margin-top: 3rem;
 }
 
-#registorconfig h1 {
+#registerconfig h1 {
     text-align: center;
     margin-bottom: 3rem;
 }

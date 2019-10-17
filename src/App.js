@@ -3,7 +3,7 @@ import Particles from 'react-particles-js';
 import LandingPage from './components/LandingPage/LandingPage.js'
 import LoadingPage from './components/LoadingPage/LoadingPage.js';
 import SignIn from './components/SignIn/SignIn.js';
-import Registor from './components/Registor/Registor.js';
+import Register from './components/Register/Register.js';
 import MainPage from './components/MainPage/MainPage.js';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -17,8 +17,10 @@ class App extends Component{
   constructor() {
     super();
     this.state = {
-      loading: false,
-      route: 'home'
+      loading: true,
+      route: 'main',
+      users: [],
+      currentUser: ''
     };
   }
 
@@ -31,6 +33,15 @@ class App extends Component{
   onRouteChange = (route) => {
     this.setState({route: route})
   }
+
+  loadUsers = (data) => {
+    this.setState({users: data})
+  }
+
+  currentUserLoad = (user) => {
+    this.setState({currentUser: user.target.value});
+  }
+  
 
   render(){
     return (
@@ -49,13 +60,13 @@ class App extends Component{
                     return <LandingPage onRouteChange={this.onRouteChange} />;
 
                     case 'signin' :
-                    return <SignIn onRouteChange={this.onRouteChange}/>;
+                    return <SignIn onRouteChange={this.onRouteChange} loadUsers={this.loadUsers} currentUserLoad={this.currentUserLoad.bind(this)}/>;
 
-                    case 'registor' :
-                    return <Registor onRouteChange={this.onRouteChange} />;
+                    case 'register' :
+                    return <Register onRouteChange={this.onRouteChange} />;
 
                     case 'main' :
-                    return <MainPage />;
+                    return <MainPage users={this.state.users} onRouteChange={this.onRouteChange} currentUser={this.state.currentUser} loadUsers={this.loadUsers} />;
 
                     default :
                     return null;

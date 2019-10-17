@@ -4,38 +4,26 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
-const CardMemberList = () => {
 
-    const member = [
-        {
-            firstname: 'nutchapon',
-            lastname: 'hanouypornlert',
-            email: 'admin@gmail.com',
-            password: 'adminpass',
-            description: 'blockchain dev. in future'
-        },
-        {
-            firstname: 'jeeja',
-            lastname: 'jubjub',
-            email: 'jeeja@gmail.com',
-            password: 'jeejapass',
-            description: 'cook in resterrant'
-        },
-        {
-            firstname: 'meeya',
-            lastname: 'saraha',
-            email: 'meeya@gmail.com',
-            password: 'meeyapass',
-            description: 'super model girl in thailand'
-        }
-      ]
+const CardMemberList = ({users}) => {
 
-    const cardComponent = member.map((key, i) => {
+    // const db = [
+    //     {
+    //         firstname: 'admin',
+    //         description: 'make me gratest'
+    //     },
+    //     {
+    //         firstname: 'admin',
+    //         description: 'make me gratest'
+    //     }
+    // ]
+
+    const cardComponent = users.map((key, i) => {
         return(
             <CardMember 
                 key={i}
-                name={member[i].firstname}
-                description={member[i].description}
+                name={users[i].firstname}
+                description={users[i].description}
             />
         )
     }) 

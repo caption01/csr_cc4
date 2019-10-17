@@ -3,3 +3,17 @@
     text-align: center;
     margin: 3rem;
 }
+
+#footerconfig {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+}
+
+#footerconfig-logout {
+
+}
+
+#footerconfig-suicide {
+    margin-right: 1rem;
+}

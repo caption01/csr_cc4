@@ -35,6 +35,18 @@
 ## Back-End Summary
     *   start project with npm init.
     *   install all essental package (expreess, cors, body-parse).
-    *   install extend package what you nedd (knex , pg).
+    *   install extend package what you nedd (knex , pg, nodemon).
     *   use post-man to test your server without having front-end.
- 
+    *   use knex-api for connect and mange with postgres-sql (pg)
+    *   careful for table structure and condition when create in psql.
+    *   fetch / api method will respone in Promise javascript.
+    *   should create api by RESTful-API.
+
+### Back-End need to learn more :
+
+        -   read how to set REST-ful API.
+        -   practice using post-man to test your server.
+        -   try to learn more SQL-language.
+        -   learn more Promise javascript method.
+        -   practice using another API (read manuscript and using).
+
