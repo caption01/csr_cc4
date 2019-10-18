@@ -50,6 +50,15 @@
 ![](https://github.com/caption01/csr_cc4/blob/master/projectrecord/daily/day5/testapp_1.JPG)
 
 
-## 9.30   : (Front-End deploy to Heroku)
+## 9.30   : (Front-End deploy to Heroku)  
+
+    [x] create app in heroku page.
+    [x] set git remote and push to heroku
+        -   please follow heroku document instucture.
+    [x] test and play with your project.
+
+
+### FINIESH THIS PROJECT ###
+
 
 

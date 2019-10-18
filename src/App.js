@@ -18,7 +18,7 @@ class App extends Component{
     super();
     this.state = {
       loading: true,
-      route: 'main',
+      route: 'home',
       users: [],
       currentUser: ''
     };
