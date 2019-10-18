@@ -50,3 +50,18 @@
         -   learn more Promise javascript method.
         -   practice using another API (read manuscript and using).
 
+
+##  Deploy on Heroku summarry
+    *   first install heroku command line (CLI) to using CLI in terminal.
+    *   create Heroku project and link with githup repo
+    *   every change we need to update on githup before push to heroku.
+    *   Heroku Database have some specific config, We must set by follow construction.
+    *   Deploy servicer side fisrt to check URL/Req,res/API can work normally.
+    *   Setting Database have some specific config we must follow documentation.
+    *   Script is important to server run code you should understand what code computor will run.
+
+ ### Deploy need to learn more :
+
+        -   pratice to use another Deploy tools.
+        -   Cloud must learn in futer.
+        -   learn another database like mongoDB.

@@ -5,6 +5,12 @@ This Project was created for practice both of web-developer task (front&back).
 
 I hope this project will be one of example for everone who try to learn in **FULLSTACK-WEBDEVELOPER** . 
 
+	see what final-project looklike.
+
+### https://csr-cc4.herokuapp.com/
+
+
+
 you can find me in other way by
 	-	ig : bbombay.nut
 	-	facebook nutchapon.hanouypornlert (**prefer this**)
