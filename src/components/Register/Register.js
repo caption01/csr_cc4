@@ -38,7 +38,7 @@ class Register extends Component {
             ) {
             alert('info must fullfill')
         } else {
-            fetch('http://localhost:3000/register', {
+            fetch('https://mighty-dusk-59576.herokuapp.com/register', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({

@@ -9,7 +9,7 @@ class MainPage extends Component{
 
   deleteTarget = (target) => {
 
-    fetch('http://localhost:3000/main', {
+    fetch('https://mighty-dusk-59576.herokuapp.com/main', {
             method: 'DELETE',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
