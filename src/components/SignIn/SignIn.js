@@ -39,7 +39,8 @@ class SignIn extends Component{
         .then(data => data.json())
         .then(data => {
             if (data.length === 0){
-                this.props.onRouteChange('home')
+                alert('recheck username or password')
+                this.props.onRouteChange('signin')
             } else {
                 this.props.loadUsers(data)
                 this.props.onRouteChange('main')
